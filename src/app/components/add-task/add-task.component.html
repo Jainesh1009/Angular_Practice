@@ -1,0 +1,15 @@
+<form *ngIf="showAddTask" class="add-form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label class="Lable">Task</label>
+        <input type="text" placeholder="Add Task" name="text" [(ngModel)]="text" />
+    </div>
+    <div class="form-control">
+        <label class="Lable">Day & Time</label>
+        <input type="text" placeholder="Add Day & Time" [(ngModel)]="day" name="day"/>
+    </div>
+    <div class="form-control form-control-check">
+        <label class="Lable">Set Reminder</label>
+        <input type="checkbox" [(ngModel)]="reminder" name="reminder"/>
+    </div>
+    <input type="submit" value="Save Task" class="btn btn-block">
+</form>
